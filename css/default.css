@@ -1,0 +1,243 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+@font-face {
+	font-family: 'fontawesome';
+	src:url('../fonts/fontawesome.eot');
+	src:url('../fonts/fontawesome.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/fontawesome.svg#fontawesome') format('svg'),
+		url('../fonts/fontawesome.woff') format('woff'),
+		url('../fonts/fontawesome.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* standard styles */
+body, html { 
+	font-size: 100%; 	
+	padding: 0; margin: 0;
+}
+
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #47a3da;
+
+}
+
+/* Links */
+li {
+	list-style: none;
+}
+
+a {
+	color: #47a3da;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+}
+
+/* header */
+.main,
+.container > header {
+	width: 90%;
+	max-width: 70em;
+	margin: 0 auto;
+	padding: 0 0 3.125em 1.875em;
+}
+
+.container > header {
+	padding: 2.875em 1.875em 1.875em;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* logo */
+.brand > a > img {
+	width: 198px;
+	padding: 0 0 0 5px;
+	margin: -10px -10px -60px;
+}
+
+.brand > span {
+	display: block;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.5em;
+	padding: 0 0 0.6em 0.1em;
+}
+
+/* navbar */
+
+.container > header > nav > ul {
+	display: flex;
+	flex-direction: row; 
+}
+
+.container > header > nav > ul > li {
+	padding: 0 7px;
+}
+
+/* Box Shadow*/
+.container > .cbp-fwslider {
+	border-bottom: 15px solid #47a3da;
+	box-shadow: 0px 11px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Cars Section */
+.container > section {
+	padding: 20px 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.container > section > h2 {
+	text-transform: capitalize;
+	font-size: 40px;
+}
+
+
+/* Featured Car */
+.container > section > div.featured {
+	display: flex;
+	margin-bottom: 30px;
+}
+
+.container > section > div.featured h3 {
+	color: #3e3e3e;
+	font-size: 30px;
+}
+
+.container > section > div.featured p {
+	color: #3e3e3e;
+	line-height: 1.3em;
+}
+
+/* other cars */
+.container > section > div#cars {
+	display: flex;
+	justify-content: space-between;
+}
+
+.container > section > div#cars > article {
+	color: #3e3e3e;
+	width: 23%;
+	border: 1px solid #e7e7e7;
+	border-radius: 10px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2)
+}
+
+.container > section > div#cars > article img {
+	width: 90%;
+}
+
+/* design */
+.container > #design > img {
+	width: 100%;
+}
+
+/* contact */
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact {
+	background:#FFF;
+	padding:25px;
+	margin:50px 0;
+}
+
+#contact h3 {
+	color: #3e3e3e;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#contact h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+  	resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:108%;
+	border:none;
+	background:#47a3da;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#contact button[type="submit"]:hover {
+	background:#3e3e3e;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+
+#contact {
+	display: flex !important;
+	flex-direction: 
+}
+
+/* media queries for mobile */
+@media only screen and (max-width: 980px)  {
+	.container > section > div.featured {
+		flex-wrap: wrap;
+		justify-content: center;
+		text-align: center;
+		border: 1px solid #3e3e3e;
+		border-radius: 10px;
+		margin-bottom: 50px;
+		padding: 20px;
+	}
+    .container > section > div#cars {
+		flex-wrap: wrap;
+	}
+	
+	.container > section > div#cars > article {
+		width: 100%;
+		padding: 20px;
+		margin-bottom: 50px;
+	}
+}
